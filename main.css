@@ -1,0 +1,329 @@
+:root {
+  --background: #22092C;
+  --text: #F3EEEA;
+  --buttons: #872341;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fontColor);
+  font-family: helvetica;
+}
+
+li {
+  list-style: circle;
+}
+
+.list {
+  list-style: square;
+}
+
+.homescreen {
+  --bg: var(--background);
+  --fontColor: var(--text);
+  --humanbtnBg: var(--buttons);
+  --humanbtnFontColor: var(--text);
+  --AIbtnBg: var(--buttons);
+  --AIbtnFontColor: var(--text);
+  --funfactboxcolor: var(--text);
+}
+
+#humanbtn {
+  cursor: pointer;
+  position: absolute;
+  top: 80%;
+  left: 55%;
+  font-size: 24px;
+  font-family: cursive;
+ 
+  height: 60px;
+  width: 100px;
+  border-radius: 15px;
+  border: none;
+  color: var(--humanbtnFontColor);
+  background-color: var(--humanbtnBg);
+  color: var(--humanbtnFontColor);
+  background-color: var(--humanbtnBg);
+}
+
+#AIbtn {
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px;
+  cursor: pointer;
+  
+
+
+  position: absolute;
+
+  top: 80%;
+  left: 40%;
+  height: 60px;
+  width: 100px;
+  border-radius: 15px;
+  border: none;
+  color: var(--AIbtnFontColor);
+  background-color: var(--AIbtnBg);
+
+}
+
+#funfact {
+  position: absolute;
+  z-index: 1000;
+  left: 50vw;
+  top: 6.5vw;
+  transform: translate(-50%, 0%);
+  font-size: 1.5vw;
+}
+
+#msg {
+  position: absolute;
+  z-index: 1000;
+  left: 50vw;
+  top: 11vw;
+  transform: translate(-50%, 0%);
+  font-size: 1.5vw;
+}
+
+#name {
+  position: absolute;
+  z-index: 1000;
+  left: 50vw;
+  top: 0vw;
+  transform: translate(-50%, 0%);
+  font-size: 3vw;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#source {
+  position: absolute;
+  z-index: 1000;
+  left: 70vw;
+  top: 13vw;
+  transform: translate(-50%, 0%);
+  font-size: 1.5vw;
+}
+
+#funfactbox {
+  padding: 0;
+
+  cursor: pointer;
+
+
+  position: absolute;
+
+  top: 7vw;
+  left: 22.5vw;
+  height: 10vw;
+  width: 56vw;
+  border-radius: 15px;
+  border: none;
+  color: var(--AIbtnFontColor);
+  background-color: var(--AIbtnBg);
+
+}
+
+#startbtn {
+  cursor: pointer;
+  position: absolute;
+  font-size: 3vw;
+  top: 40vw;
+  left: 43vw;
+  height: 7vw;
+  width: 14vw;
+  border-radius: 15px;
+  border: none;
+  color: var(--humanbtnFontColor);
+  background-color: var(--humanbtnBg);
+  color: var(--humanbtnFontColor);
+  background-color: var(--humanbtnBg);
+}
+#continuebtn {
+  cursor: pointer;
+  position: absolute;
+  font-size: 20px;
+  top: 70%;
+  left: 45%;
+  height: 60px;
+  width: 150px;
+  border-radius: 15px;
+  border: none;
+  color: var(--humanbtnFontColor);
+  background-color: var(--humanbtnBg);
+  color: var(--humanbtnFontColor);
+  background-color: var(--humanbtnBg);
+}
+#score {
+  font-size: 50px;
+  font-family: helvetica;
+  z-index: 100;
+  cursor: pointer;
+  position: absolute;
+  top: 20%;
+  left: 41%;
+  color: var(--text);
+}
+#infobox {
+  padding: 0;
+
+  cursor: pointer;
+
+
+  position: absolute;
+
+  top: 30%;
+  left: 22%;
+  height: 100%;
+  width: 56%;
+  border-radius: 15px;
+  border: none;
+  color: var(--AIbtnFontColor);
+  background-color: var(--AIbtnBg);
+
+}
+#info {
+  position: absolute;
+  z-index: 1000;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, 0%);
+}
+
+#correctbox {
+  padding: 0;
+
+  cursor: pointer;
+  position: absolute;
+
+  top: 35%;
+  left: 22%;
+  height: 25%;
+  width: 56%;
+  border-radius: 15px;
+  color: var(--AIbtnFontColor);
+  background-color: var(--AIbtnBg);
+  outline: 2px solid rgb(18, 255, 18);
+
+}
+#wrongbox {
+  padding: 0;
+
+  cursor: pointer;
+  position: absolute;
+
+  top: 35%;
+  left: 22%;
+  height: 25%;
+  width: 56%;
+  border-radius: 15px;
+  color: var(--AIbtnFontColor);
+  background-color: var(--AIbtnBg);
+  outline: 2px solid rgb(255, 0, 0);
+
+}
+#correct {
+  font-size: 20px;
+  position: absolute;
+  z-index: 1000;
+  left: 27%;
+  top: 35%;
+  transform: translate(-50%, 0%);
+}
+#wrong {
+  font-size: 20px;
+  position: absolute;
+  z-index: 1000;
+  left: 27%;
+  top: 35%;
+  transform: translate(-50%, 0%);
+}
+#picture1info {
+  position: absolute;
+  font-size: 20px;
+  z-index: 1000;
+  left: 45%;
+  top: 35%;
+  transform: translate(-50%, 0%);
+}
+
+#picture2info {
+  font-size: 20px;
+  position: absolute;
+  z-index: 1000;
+  left: 47%;
+  top: 35%;
+  transform: translate(-50%, 0%);
+}
+#picture3info {
+  font-size: 20px;
+  position: absolute;
+  z-index: 1000;
+  left: 44%;
+  top: 35%;
+  transform: translate(-50%, 0%);
+}
+#picture4info {
+  font-size: 20px;
+  position: absolute;
+  z-index: 1000;
+  left: 42%;
+  top: 35%;
+  transform: translate(-50%, 0%);
+}
+#picture5info {
+  font-size: 20px;
+  position: absolute;
+  z-index: 1000;
+  left: 53.5%;
+  top: 35%;
+  transform: translate(-50%, 0%);
+}
+#picture6info {
+  font-size: 20px;
+  position: absolute;
+  z-index: 1000;
+  left: 48%;
+  top: 35%;
+  transform: translate(-50%, 0%);
+}
+
+#picture7info { 
+  font-size: 20px;
+  position: absolute;
+  z-index: 1000;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, 0%);
+}
+#picture8info {
+  font-size: 20px;
+  position: absolute;
+  z-index: 1000;
+  left: 48%;
+  top: 35%;
+  transform: translate(-50%, 0%);
+}
+#picture9info {
+  font-size: 20px;
+  position: absolute;
+  z-index: 1000;
+  left: 53.5%;
+  top: 35%;
+  transform: translate(-50%, 0%);
+}
+#picture10info {
+  font-size: 20px;
+  position: absolute;
+  z-index: 1000;
+  left: 38.5%;
+  top: 35%;
+  transform: translate(-50%, 0%);
+}
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+html, body {
+  max-height: 100%;
+  overflow-y: hidden;
+}
